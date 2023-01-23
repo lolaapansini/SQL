@@ -1,0 +1,21 @@
+-First I created a database for a clothing store:
+create table boutique (id integer primary key, name text, quantity integer, price integer, sold integer);
+
+
+-created the columns and statistics of the store:
+
+insert into boutique VALUES (1, 't-shirt', 22, 8, 6);
+insert into boutique VALUES (2, 'jeans', 13, 32, 13);
+insert into boutique VALUES (3, 'crop top', 10, 17, 10);
+insert into boutique VALUES (4, 'sweatshirt', 25,29, 21);
+insert into boutique VALUES (5, 'skirt', 17, 7, 12);
+
+
+-Displayed the database order by price:
+select * from boutique order by price;
+
+
+-total sum of everything sold:
+select sum(sold) from boutique;
+
+
